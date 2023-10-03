@@ -1,0 +1,156 @@
+@import "variables";
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $pale-blue;
+    font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="437"><path fill="%23D6E1FF" fill-rule="evenodd" d="M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z"/></svg>');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.container{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: $very-pale-blue;
+    margin: auto;
+    border-radius: 0.9375rem;
+    margin-top: 1.875rem;
+    box-shadow: 0.0625rem 0.3125rem 1.875rem -1.25rem $b-blue;
+
+    .image{
+        img{
+            width: 100%;
+            border-radius: 0.9375rem 0.9375rem 0 0;
+        }
+    }
+
+    .order-details{
+        text-align: center;
+        padding: 1.25rem 2.5rem 1.25rem;
+
+        .heading{
+            color: $dark-blue;
+            padding-bottom: 0.9375rem;
+            font-size: 1.5625rem;
+            font-weight: 900;
+        }
+
+        .info{
+            font-size: 1rem;
+            letter-spacing: 0.00625rem;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+    }
+
+    .payment-info{
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        font-size: 0.8125rem;
+        background-color: $pale-blue;
+        margin: 0.625rem 1.0625rem;
+        border-radius: 0.625rem;
+        padding: 0.625rem 0.9375rem;
+
+        .payment-plan{
+            display: flex;
+            gap: 0.1875rem;
+            flex-direction: column;
+            #plan{
+                flex: 0 0 auto;
+                color: $dark-blue;
+                font-weight: 900;
+            }
+            #amount{
+                color: $desaturated-blue;
+                font-weight: 500;
+            }
+        }
+
+        .change{
+            margin-left: auto;
+            font-weight: 700;
+            a{
+                color: $bright-blue;
+            }
+        }
+        .change:hover{
+           a{
+            color: $b-blue;
+            text-decoration: none;
+           }
+        }
+    }
+
+    .btn{
+        display: flex;
+        flex-direction: column;
+        margin: 0.625rem 1.0625rem;
+        font-size: 0.8125rem;
+
+        #proceed{
+            color: $very-pale-blue;
+            font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+            letter-spacing: 0.01875rem;
+            font-weight: 700;
+            cursor: pointer;
+            padding: 0.9375rem 1.0625rem;
+            background-color: $bright-blue;
+            box-shadow: 0.0625rem 1.1875rem 1.875rem -1.0625rem $b-blue;
+            border-radius: 0.5rem;
+
+        }
+        #proceed:hover{
+            background-color: $b-blue;
+        }
+
+        #cancel{
+            color: $dark-blue;
+            padding: 0;
+            margin: 1.0625rem 0;
+            text-align: center;
+            margin: 1.0625rem 0 1.25rem;
+            text-decoration: none;
+        }
+        #cancel:hover{
+            font-weight: 900;
+        }
+    }
+}
+.attribution{
+    padding-bottom: 0.625rem;
+    margin-top: 1.0625rem;
+    font-size: 0.6875rem;
+    text-align: center;
+    a{
+        color: $footer-link;
+        text-decoration: none;
+    }
+}
+
+// media query for smaller screens
+@media all and (max-width: 932px) {
+    .container{
+        width: 40%;
+    }
+  }
+
+@media all and (max-width: 760px) {
+    .container{
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 570px) {
+    .container{
+        width: 70%;
+    }
+  }

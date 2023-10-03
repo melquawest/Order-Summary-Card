@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsla(225, 100%, 94%, 0.726);
+  font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="437"><path fill="%23D6E1FF" fill-rule="evenodd" d="M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z"/></svg>');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(225, 100%, 98%);
+  margin: auto;
+  border-radius: 0.9375rem;
+  margin-top: 1.875rem;
+  box-shadow: 0.0625rem 0.3125rem 1.875rem -1.25rem hsla(245, 75%, 52%, 0.744);
+}
+.container .image img {
+  width: 100%;
+  border-radius: 0.9375rem 0.9375rem 0 0;
+}
+.container .order-details {
+  text-align: center;
+  padding: 1.25rem 2.5rem 1.25rem;
+}
+.container .order-details .heading {
+  color: hsl(223, 47%, 23%);
+  padding-bottom: 0.9375rem;
+  font-size: 1.5625rem;
+  font-weight: 900;
+}
+.container .order-details .info {
+  font-size: 1rem;
+  letter-spacing: 0.00625rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.container .payment-info {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 0.8125rem;
+  background-color: hsla(225, 100%, 94%, 0.726);
+  margin: 0.625rem 1.0625rem;
+  border-radius: 0.625rem;
+  padding: 0.625rem 0.9375rem;
+}
+.container .payment-info .payment-plan {
+  display: flex;
+  gap: 0.1875rem;
+  flex-direction: column;
+}
+.container .payment-info .payment-plan #plan {
+  flex: 0 0 auto;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.container .payment-info .payment-plan #amount {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+.container .payment-info .change {
+  margin-left: auto;
+  font-weight: 700;
+}
+.container .payment-info .change a {
+  color: hsl(245, 75%, 52%);
+}
+.container .payment-info .change:hover a {
+  color: hsla(245, 75%, 52%, 0.744);
+  text-decoration: none;
+}
+.container .btn {
+  display: flex;
+  flex-direction: column;
+  margin: 0.625rem 1.0625rem;
+  font-size: 0.8125rem;
+}
+.container .btn #proceed {
+  color: hsl(225, 100%, 98%);
+  font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.01875rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.9375rem 1.0625rem;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0.0625rem 1.1875rem 1.875rem -1.0625rem hsla(245, 75%, 52%, 0.744);
+  border-radius: 0.5rem;
+}
+.container .btn #proceed:hover {
+  background-color: hsla(245, 75%, 52%, 0.744);
+}
+.container .btn #cancel {
+  color: hsl(223, 47%, 23%);
+  padding: 0;
+  margin: 1.0625rem 0;
+  text-align: center;
+  margin: 1.0625rem 0 1.25rem;
+  text-decoration: none;
+}
+.container .btn #cancel:hover {
+  font-weight: 900;
+}
+
+.attribution {
+  padding-bottom: 0.625rem;
+  margin-top: 1.0625rem;
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media all and (max-width: 932px) {
+  .container {
+    width: 40%;
+  }
+}
+@media all and (max-width: 760px) {
+  .container {
+    width: 50%;
+  }
+}
+@media all and (max-width: 570px) {
+  .container {
+    width: 70%;
+  }
+}/*# sourceMappingURL=style.css.map */
