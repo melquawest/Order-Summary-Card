@@ -43,6 +43,7 @@ body{
         }
 
         .info{
+            color: $desaturated-blue;
             font-size: 1rem;
             letter-spacing: 0.00625rem;
             font-weight: 500;
@@ -154,3 +155,9 @@ body{
         width: 70%;
     }
   }
+
+@media all and (max-width: 375px) {
+    .container{
+        width: 90%;
+    }
+}
